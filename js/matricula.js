@@ -1,0 +1,42 @@
+var $tdTotalCursos = document.querySelector('.js-total-de-cursos');
+var $tdTotalDeHoras = document.querySelector('.js-total-de-horas');
+var $buttonConfirmar = document.querySelector('.js-botao-matricula');
+var totalHoras = 0;
+var totalCursos = 0;
+
+function adicionaCurso(checkbox) {
+
+    if (checkbox.checked) {
+        totalCursos++;
+        totalHoras += parseInt(checkbox.value);
+    } else {
+        totalCursos--;
+        totalHoras -= parseInt(checkbox.value);
+    }
+
+    $tdTotalDeHoras.textContent = totalHoras + 'h';
+    $tdTotalCursos.textContent = totalCursos + ' curso(s)';
+
+    if (totalCursos < 0 || totalHoras < 0) {
+        totalCursos = 0;
+        totalHoras = 0;
+        $tdTotalDeHoras.textContent = totalHoras + 'h';
+        $tdTotalCursos.textContent = totalCursos + ' curso(s)';
+        window.location.href = 'matricula.html';
+    }
+}
+
+$buttonConfirmar.onclick = confirmaMatriculas;
+
+function confirmaMatriculas() {
+
+    if (totalCursos === 0) {
+        alert('Nenhum curso selecionado');
+    } else if (totalCursos === 1) {
+        alert('Matricula confirmada no curso!');
+        window.location.href = 'index.html';
+    } else {
+        alert('Matricula confirmada nos cursos!');
+        window.location.href = 'index.html';
+    }
+}
