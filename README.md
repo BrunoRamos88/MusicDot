@@ -1,6 +1,6 @@
 # MusicDot
 
-Desenvolvimento de uma página web utilizando HTML, CSS e Javascript.
+🎼 Desenvolvimento de um website clone da página musicdot.com.br 🎼
 
 ## 💻 Tecnologias
 
@@ -8,7 +8,7 @@ Desenvolvimento de uma página web utilizando HTML, CSS e Javascript.
 - CSS
 - JavaScript
 
-## ⌨️
+## 👨🏻‍💻
 
 - HTML
     - Estruturação da página 
@@ -31,9 +31,9 @@ Desenvolvimento de uma página web utilizando HTML, CSS e Javascript.
 
 
 <p align="center">
-  Clique nas imagens abaixo para acessar a página 👇👇👇
+  Clique nas imagens abaixo para acessar a página 👇🏼👇🏼👇🏼
 </p>
-
+</br>
 
 <p align="center">
 <a href="https://bruno-ramos-dev.github.io/MusicDot/"><img src="https://i.ibb.co/pKjqx67/musidot.jpg" alt="musidot-2" border="0"></a>
